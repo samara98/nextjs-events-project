@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-events-project",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Sulthon Abdul Malik <sulthon.abdmalik@gmail.com>",
+  "license": "MIT",
+  "description": "NextJS Events Project",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier:file": "prettier -w \"{public,src}/**/*.{md,html,css,scss,json,js,jsx,ts,tsx}\""
+  },
+  "dependencies": {
+    "next": "10.0.8",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "husky": "4",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samara98/nextjs-events-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samara98/nextjs-events-project/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md,html,css,scss,json,js,jsx,ts,tsx}": "prettier -w"
+  }
+}
