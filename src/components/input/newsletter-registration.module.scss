@@ -26,6 +26,8 @@
 }
 
 .control {
+  display: flex;
+
   & input {
     font: inherit;
     padding: 0.25rem;
@@ -33,11 +35,6 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border: 1px solid #ccc;
-
-    & input {
-      flex: 1;
-    }
+    flex: 1;
   }
-
-  display: flex;
 }
