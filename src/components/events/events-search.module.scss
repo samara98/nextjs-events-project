@@ -35,6 +35,11 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    flex-direction: row;
+  }
 }
 
 .control {
@@ -57,9 +62,6 @@
   }
 
   @media (min-width: 768px) {
-    width: 80%;
-    flex-direction: row;
-
     & select {
       width: 100%;
     }
